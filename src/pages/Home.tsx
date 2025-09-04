@@ -7,7 +7,6 @@ export default function Home() {
           CS @ KU ’25 · Apprentice @ Acellus · I build React/TS apps and Go APIs. Here are a few things I’m proud of ↓
         </p>
         <div style={{display:'flex',gap:10,flexWrap:'wrap'}}>
-          <a className="btn primary" href="/projects">View Projects</a>
           <a className="btn" href="mailto:kmdeskin@me.com">Contact me</a>
         </div>
       </section>
