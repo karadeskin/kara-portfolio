@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# 🌴 Kara Deskin — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Deploy on Vercel](https://vercel.com/button)](https://karadeskin.vercel.app)
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio! This site highlights my projects, experience, and skills as a Computer Science graduate and developer.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live Site:** [karadeskin.vercel.app](https://karadeskin.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
+- **Home Page** — quick intro with my focus areas (AI, Full Stack, Data).  
+- **Projects** — a showcase of coding projects with tech stack, GitHub links, and live demos (coming soon)  
+- **Project Details** — individual project pages with summaries, tech used, and links.  
+- **About Page** — info about me and my journey.  
+- **Contact Page** — direct ways to reach me (email, LinkedIn, GitHub).  
+- **Responsive Design** — works on desktop and mobile.  
+- **Minimal aesthetic** — clean white UI with orange/pink accents 🌺🧡  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Tech Stack
+- **Framework:** React + TypeScript + Vite  
+- **Routing:** TanStack Router  
+- **Data Fetching:** TanStack Query  
+- **Styling:** Custom CSS (white + orange + pink palette)  
+- **Deployment:** Vercel  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Getting Started
+Clone the repo and run locally:
+
+```bash
+git clone https://github.com/karadeskin/kara-portfolio.git
+cd kara-portfolio
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Build for production:
+```bash
+npm run build
 ```
