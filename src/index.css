@@ -1,0 +1,82 @@
+:root{
+  --bg: #ffffff;
+  --text: #222;
+  --muted: #6b7280;           /* neutral gray */
+  --surface: #ffffff;         /* cards */
+  --border: #edf0f2;          /* soft line */
+  --shadow: 0 6px 20px rgba(0,0,0,.06);
+
+  --accent: #FF7F50;          /* coral/orange */
+  --accent-2: #FF5FA2;        /* soft pink */
+  --accent-3: #FFA07A;        /* light salmon */
+
+  --radius: 14px;
+  --container: 980px;
+  --space: 16px;
+  --space-lg: 24px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+*{ box-sizing: border-box }
+html, body, #root { height: 100% }
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  font: 16px/1.55 var(--font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* layout */
+.container{ max-width: var(--container); margin: 0 auto; padding: var(--space); }
+.stack > * + *{ margin-top: var(--space) }
+.grid{ display:grid; gap: var(--space); }
+@media (min-width: 720px){ .grid.cards{ grid-template-columns: repeat(2,minmax(0,1fr)); } }
+
+/* header */
+.site-header{
+  display:flex; align-items:center; justify-content:space-between;
+  margin-bottom: var(--space-lg);
+}
+.brand{ font-weight:700; letter-spacing:.2px; }
+
+/* nav */
+.nav{ display:flex; gap: 14px; align-items:center; }
+a.navlink{
+  color:var(--text); text-decoration:none; padding:6px 10px; border-radius:10px;
+  transition: background .15s ease, color .15s ease;
+}
+a.navlink:hover{ background: #fafafa; }
+a.navlink.active{ color: var(--accent); }
+
+/* cards & badges */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space);
+  box-shadow: var(--shadow);
+}
+.badge{
+  display:inline-block; padding:3px 10px; border-radius:999px;
+  background: #fff1f1; color:#b03060; font-size:.8rem; border:1px solid #ffe3ea;
+}
+
+/* buttons */
+.btn{
+  display:inline-block; font-weight:600; text-decoration:none;
+  padding:8px 12px; border-radius: 10px; border:1px solid var(--border);
+  color: var(--text); background:#fff; transition: all .15s ease;
+}
+.btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow); }
+.btn.primary{
+  border-color: transparent; color:#fff; background:
+  linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+}
+
+/* text */
+.muted{ color: var(--muted); }
+
+/* footer */
+.site-footer{ margin-top: 28px; color:var(--muted); font-size:.92rem; }
