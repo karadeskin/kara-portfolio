@@ -1,5 +1,8 @@
 //project info 
 
+//type Project that can be used in other files
+//repo and live are optional
+//tech is an array of objects with name and color
 export type Project = {
     slug: string
     title: string
@@ -9,6 +12,7 @@ export type Project = {
     live?: string
   }
   
+  //constant array of projects
   export const PROJECTS: Project[] = [
     {
       slug: 'reframe-ai',
