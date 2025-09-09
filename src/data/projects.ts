@@ -10,6 +10,7 @@ export type Project = {
     tech: { name: string; color: string }[] 
     repo?: string
     live?: string
+    demo?: string
   }
   
   //constant array of projects
@@ -26,6 +27,7 @@ export type Project = {
         { name: 'pandas', color: '#FFB347' }, 
       ],
       repo: 'https://github.com/karadeskin/reframe',
+      demo: '/reframe-demo.mp4',
     },
     {
       slug: 'music-recs',

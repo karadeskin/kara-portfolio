@@ -24,7 +24,6 @@ export default function Home() {
           />
         </svg>
       </div>
-
       <span className="badge">AI • Full-Stack • Web</span>
       <h1 className="text-4xl font-bold">Hi, I’m Kara</h1>
       <p className="muted">

@@ -29,6 +29,8 @@ import {
     )
   }
   
+  //this is the layout component that wraps all pages
+  //outlet is where the child routes will be rendered
   function RootLayout() {
     return (
         <div className="container">
