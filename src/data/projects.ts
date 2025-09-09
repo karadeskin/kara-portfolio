@@ -40,6 +40,7 @@ export type Project = {
         { name: 'Flask', color: '#FF8C00' },
       ],
       repo: 'https://github.com/karadeskin/Music-Recommendation',
+      demo: '/music-demo.mp4',
     },
     {
       slug: 'acellus-gold-store',
