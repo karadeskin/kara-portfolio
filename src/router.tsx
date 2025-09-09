@@ -33,22 +33,30 @@ import {
   //outlet is where the child routes will be rendered
   function RootLayout() {
     return (
-        <div className="container">
-          <header className="site-header">
-            <strong className="brand">Kara Deskin</strong>
-            <nav className="nav">
-              <NavLink to="/" className="navlink">Home</NavLink>
-              <NavLink to="/projects" className="navlink">Projects</NavLink>
-              <NavLink to="/about" className="navlink">About</NavLink>
-              <NavLink to="/contact" className="navlink">Contact</NavLink>
-              <a className="navlink" href="https://github.com/karadeskin" target="_blank" rel="noreferrer">GitHub ↗</a>
-              <a className="navlink" href="https://linkedin.com/in/karadeskin" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            </nav>
-          </header>
-          <Outlet />
-          <footer className="site-footer">© {new Date().getFullYear()} Kara Deskin</footer>
-        </div>
-      )
+      <div className="container">
+        <header className="site-header">
+          <strong className="brand">Kara Deskin</strong>
+          <nav className="nav">
+            <NavLink to="/" className="navlink">Home</NavLink>
+            <NavLink to="/projects" className="navlink">Projects</NavLink>
+            <NavLink to="/about" className="navlink">About</NavLink>
+            <NavLink to="/contact" className="navlink">Contact</NavLink>
+            <a className="navlink" href="https://github.com/karadeskin" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a className="navlink" href="https://linkedin.com/in/karadeskin" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a 
+              className="navlink"
+              href="/Kara_Deskin_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
+          </nav>
+        </header>
+        <Outlet />
+        <footer className="site-footer">© {new Date().getFullYear()} Kara Deskin</footer>
+      </div>
+    )
   }
   
   //routes
