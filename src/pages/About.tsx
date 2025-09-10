@@ -1,4 +1,5 @@
 // about page component
+import NowPlaying from '../components/NowPlaying';
 
 export default function About() {
   return (
@@ -27,6 +28,7 @@ export default function About() {
           out, hiking, and spending time outdoors — and I’m passionate about helping children
           and giving back to my community.
         </p>
+
         <h3 className="mt-6">Skills</h3>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "8px" }}>
           {[
@@ -51,6 +53,9 @@ export default function About() {
             </span>
           ))}
         </div>
+
+        {/* 👇 Add your NowPlaying widget right here */}
+        <NowPlaying />
       </div>
     </section>
   )
