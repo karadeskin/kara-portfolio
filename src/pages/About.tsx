@@ -55,7 +55,9 @@ export default function About() {
         </div>
 
         {/* 👇 Add your NowPlaying widget right here */}
-        <NowPlaying />
+        <div className="mt-4">
+          <NowPlaying />
+        </div>
       </div>
     </section>
   )
