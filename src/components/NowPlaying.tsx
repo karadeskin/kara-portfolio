@@ -10,7 +10,7 @@ type Track = {
 };
 
 const baseCard: React.CSSProperties = {
-  display: "inline-flex",          // <-- hugs content
+  display: "inline-flex",          
   alignItems: "center",
   gap: 12,
   marginTop: 16,
@@ -54,7 +54,6 @@ export default function NowPlaying() {
 
   const hasTrack = Boolean(track.title);
 
-  // ❌ Not listening at all (fallback)
   if (!hasTrack) {
     return (
       <a
@@ -74,7 +73,6 @@ export default function NowPlaying() {
     );
   }
 
-  // ✅ Track available (playing or paused)
   return (
     <a
       href={track.url ?? "#"}

@@ -7,7 +7,6 @@ async function refreshAccessToken() {
     client_id: process.env.SPOTIFY_CLIENT_ID!,
     client_secret: process.env.SPOTIFY_CLIENT_SECRET!,
   });
-
   const r = await fetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -20,20 +19,15 @@ async function refreshAccessToken() {
 export default async function handler(_req: VercelRequest, res: VercelResponse) {
   try {
     const { access_token } = await refreshAccessToken();
-
     const now = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
       headers: { Authorization: `Bearer ${access_token}` },
-      // prevent caching in Vercel CDN
       cache: 'no-store' as any
     });
-
     if (now.status === 204) {
       return res.status(200).json({ playing: false });
     }
-
     const data = await now.json();
     const item = data?.item;
-
     res.setHeader('Cache-Control', 'no-store');
     return res.status(200).json({
       playing: Boolean(data?.is_playing),

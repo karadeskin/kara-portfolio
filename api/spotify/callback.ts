@@ -8,7 +8,6 @@ async function exchangeCodeForTokens(code: string) {
     client_id: process.env.SPOTIFY_CLIENT_ID!,
     client_secret: process.env.SPOTIFY_CLIENT_SECRET!,
   });
-
   const r = await fetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -23,10 +22,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const error = req.query.error as string | undefined;
   if (error) return res.status(400).send(error);
   if (!code) return res.status(400).send('Missing code');
-
   try {
     const tokens = await exchangeCodeForTokens(code);
-    // Show the refresh token so you can paste it into Vercel envs
     res.setHeader('Content-Type', 'text/html');
     res.send(`
       <h1>Spotify connected ✔</h1>
