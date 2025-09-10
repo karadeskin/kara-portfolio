@@ -58,6 +58,9 @@ export default function About() {
         <div className="mt-4">
           <NowPlaying />
         </div>
+        <div style={{ marginTop: 8, padding: 8, border: '1px dashed #f0a' }}>
+          about debug: i am rendering
+        </div>
       </div>
     </section>
   )
