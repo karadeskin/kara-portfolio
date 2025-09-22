@@ -29,7 +29,7 @@ export default function Home() {
       <p className="muted">
         Full-Stack Developer. Will never say no to coffee! Here are a few things I’m proud of ↓
       </p>
-      <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+      <div className="button-group">
         <Link className="btn primary" to="/projects">
           View Projects
         </Link>

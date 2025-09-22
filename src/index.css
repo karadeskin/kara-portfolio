@@ -80,3 +80,105 @@ a.navlink.active{ color: var(--accent); }
 
 /* footer */
 .site-footer{ margin-top: 28px; color:var(--muted); font-size:.92rem; }
+
+/* mobile */
+
+/* navigation improvements */
+@media (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+    gap: var(--space);
+    align-items: flex-start;
+  }
+  
+  .nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navlink {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+  
+  /* hide external links on very small screens or stack them */
+  .nav a[target="_blank"] {
+    font-size: 0.8rem;
+  }
+
+  /* improve mobile card layout */
+  .grid.cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    padding: var(--space) 12px;
+  }
+
+  /* typography improvements for mobile */
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* mobile container and spacing */
+@media (max-width: 480px) {
+  .container {
+    padding: var(--space) 12px;
+  }
+  
+  .site-header {
+    margin-bottom: var(--space);
+  }
+  
+  /* stack navigation vertically on very small screens */
+  .nav {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* better mobile spacing */
+  :root {
+    --space: 12px;
+    --space-lg: 18px;
+  }
+}
+
+/* button group for home page */
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .button-group .btn {
+    text-align: center;
+  }
+
+  /* improve mobile badge styling */
+  .badge {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+  }
+}
