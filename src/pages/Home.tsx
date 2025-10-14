@@ -27,7 +27,7 @@ export default function Home() {
       <span className="badge">AI • Full-Stack • Web</span>
       <h1 className="text-4xl font-bold">Hi, I’m Kara</h1>
       <p className="muted">
-        Full-Stack Developer. Will never say no to coffee! Here are a few things I’m proud of ↓
+        Full-Stack Developer & Midwest Made *❀。• *₊°。 ❀° Here are a few things I’m proud of ↓
       </p>
       <div className="button-group">
         <Link className="btn primary" to="/projects">
