@@ -59,8 +59,8 @@ a.navlink.active{ color: var(--accent); }
   box-shadow: var(--shadow);
 }
 .badge{
-  display:inline-block; padding:3px 10px; border-radius:999px;
-  background: #fff1f1; color:#b03060; font-size:.8rem; border:1px solid #ffe3ea;
+  display:inline-block; padding:4px 10px; border-radius:999px;
+  background: #fff1f1; color:#b03060; font-size:.88rem; border:1px solid #ffe3ea;
 }
 
 /* buttons */
@@ -68,7 +68,15 @@ a.navlink.active{ color: var(--accent); }
   display:inline-block; font-weight:600; text-decoration:none;
   padding:8px 12px; border-radius: 10px; border:1px solid var(--border);
   color: var(--text); background:#fff; transition: all .15s ease;
+  font-size: 0.95rem; /* explicit size so buttons (a/button) match */
+  line-height: 1.2;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+.btn:focus{ outline: 3px solid rgba(99,102,241,0.15); outline-offset: 2px }
+.btn.button, button.btn { cursor: pointer }
 .btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow); }
 .btn.primary{
   border-color: transparent; color:#fff; background:
@@ -156,6 +164,9 @@ a.navlink.active{ color: var(--accent); }
     --space: 12px;
     --space-lg: 18px;
   }
+
+  /* slightly larger touch targets for buttons on very small screens */
+  .btn { padding: 10px 14px }
 }
 
 /* button group for home page */
@@ -174,6 +185,7 @@ a.navlink.active{ color: var(--accent); }
   
   .button-group .btn {
     text-align: center;
+    font-size: 0.95rem;
   }
 
   /* improve mobile badge styling */

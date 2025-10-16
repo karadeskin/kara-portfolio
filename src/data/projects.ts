@@ -11,6 +11,7 @@ export type Project = {
   repo?: string
   live?: string
   demo?: string
+  caseStudy?: boolean
 }
 
 //constant array of projects
@@ -27,7 +28,8 @@ export const PROJECTS: Project[] = [
       { name: 'pandas', color: '#FFB347' },
     ],
     repo: 'https://github.com/karadeskin/reframe',
-    demo: '/reframe-demo.mp4',
+  demo: '/reframe-demo.mov',
+  caseStudy: true,
   },
   {
     slug: 'music-recs',
@@ -40,7 +42,8 @@ export const PROJECTS: Project[] = [
       { name: 'Flask', color: '#FF8C00' },
     ],
     repo: 'https://github.com/karadeskin/Music-Recommendation',
-    demo: '/music-demo.mp4',
+  demo: '/music-demo.mov',
+  caseStudy: true,
   },
   {
     slug: 'acellus-gold-store',
@@ -63,6 +66,7 @@ export const PROJECTS: Project[] = [
       { name: 'Leaflet', color: '#4CAF50' }
     ],
     repo: 'https://github.com/karadeskin/Travel',          
-    demo: '/travel-demo.mp4'
+    demo: '/travel-demo.mov',
+    caseStudy: false
   }
 ]

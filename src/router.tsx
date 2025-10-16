@@ -12,6 +12,9 @@ import {
   import Project from './pages/Project'
   import About from './pages/About'
   import Contact from './pages/Contact'
+  import ReframeCaseStudy from './pages/case-studies/Reframe'
+  import MusicRecsCaseStudy from './pages/case-studies/MusicRecs'
+  import AcellusCaseStudy from './pages/case-studies/Acellus'
   
   function Title({ t }: { t: string }) {
     useEffect(() => { document.title = t }, [t])
@@ -91,6 +94,24 @@ import {
     path: '/contact',
     component: () => (<><Title t="Contact — Kara Deskin" /><Contact /></>),
   })
+
+  const reframeCaseRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: '/case-studies/reframe-ai',
+    component: () => (<><Title t="Reframe — Case Study" /><ReframeCaseStudy /></>),
+  })
+
+  const musicCaseRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: '/case-studies/music-recs',
+    component: () => (<><Title t="Music Recs — Case Study" /><MusicRecsCaseStudy /></>),
+  })
+
+  const acellusCaseRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: '/case-studies/acellus-gold-store',
+    component: () => (<><Title t="Acellus — Case Study" /><AcellusCaseStudy /></>),
+  })
   
   const notFoundRoute = createRoute({
     getParentRoute: () => rootRoute,
@@ -104,7 +125,17 @@ import {
     ),
   })
   
-  rootRoute.addChildren([indexRoute, projectsRoute, projectRoute, aboutRoute, contactRoute, notFoundRoute])
+  rootRoute.addChildren([
+    indexRoute,
+    projectsRoute,
+    projectRoute,
+    aboutRoute,
+    contactRoute,
+    reframeCaseRoute,
+    musicCaseRoute,
+    acellusCaseRoute,
+    notFoundRoute,
+  ])
   
   export const router = createRouter({ routeTree: rootRoute })
   
