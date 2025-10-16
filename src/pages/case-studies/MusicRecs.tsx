@@ -1,12 +1,13 @@
 import React from 'react'
 import { PROJECTS } from '../../data/projects'
+import { Link } from '@tanstack/react-router'
 
 export default function MusicRecsCaseStudy() {
   const p = PROJECTS.find((x) => x.slug === 'music-recs')!
   return (
     <main className="case-study stack">
   <header className="hero">
-  <a className="navlink active" href="/projects">← Back to Projects</a>
+  <Link className="navlink active" to="/projects">← Back to Projects</Link>
     <h1>{p.title}</h1>
   <p className="muted">Music Recommendation System PCA + KNN</p>
     {/* Intentionally left empty: project links live on the Projects page */}
