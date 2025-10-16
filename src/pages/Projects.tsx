@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from '@tanstack/react-router'
 import { PROJECTS } from '../data/projects'
 
 export default function Projects() {
@@ -51,13 +52,13 @@ export default function Projects() {
                 </button>
               )}
               {p.caseStudy && (
-                <a className="btn" href={`/case-studies/${p.slug}`}>
+                <Link className="btn" to={`/case-studies/${p.slug}`}>
                   Case Study
-                </a>
+                </Link>
               )}
-              <a className="btn primary" href={`/projects/${p.slug}`}>
+              <Link className="btn primary" to={`/projects/${p.slug}`}>
                 Details
-              </a>
+              </Link>
             </div>
           </article>
         ))}

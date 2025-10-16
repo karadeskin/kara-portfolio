@@ -1,12 +1,13 @@
 import React from 'react'
 import { PROJECTS } from '../../data/projects'
+import { Link } from '@tanstack/react-router'
 
 export default function ReframeCaseStudy() {
   const p = PROJECTS.find((x) => x.slug === 'reframe-ai')!
   return (
     <main className="case-study stack">
-      <header className="hero">
-  <a className="navlink active" href="/projects">← Back to Projects</a>
+    <header className="hero">
+  <Link className="navlink active" to="/projects">← Back to Projects</Link>
         <h1>{p.title}</h1>
         <p className="muted">Reframe AI Mental Health Chatbot</p>
         {/* Intentionally left empty: project links live on the Projects page */}
