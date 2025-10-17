@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <span className="badge">AI • Full-Stack • Web</span>
       <h1 className="text-4xl font-bold">Kara Deskin ・❥・</h1>
-      <p className="muted">Full-Stack Developer · Midwest made — here are a few things I’m proud of ↓</p>
+  <p className="muted">Full-Stack Developer · Midwest made *ೃ༄ here are a few things I’m proud of ↓</p>
       <div className="button-group">
         <Link className="btn primary" to="/projects">
           View Projects
