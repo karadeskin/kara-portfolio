@@ -263,20 +263,28 @@ body:has([data-custom-footer]) #global-footer {
   main > div:first-child[style*="justify-content"] {
     flex-wrap: wrap;
     gap: 12px !important;
+    justify-content: center !important;
   }
   
-  /* Make arrow buttons larger and more touch-friendly on mobile */
-  main > div:first-child[style*="justify-content"] > div {
-    order: 2;
-    width: 100%;
-    justify-content: center;
-  }
-  
+  /* Keep back button full width but arrows together */
   main > div:first-child[style*="justify-content"] > a:first-child {
     order: 1;
     width: 100%;
     justify-content: center;
     text-align: center;
+  }
+  
+  /* Make arrow buttons stay together and centered */
+  main > div:first-child[style*="justify-content"] > div {
+    order: 2;
+    width: auto !important;
+    justify-content: center;
+  }
+  
+  /* Larger touch targets for arrow buttons */
+  main > div:first-child[style*="justify-content"] .btn {
+    min-width: 50px;
+    padding: 12px 18px;
   }
 }
 
@@ -314,6 +322,23 @@ body:has([data-custom-footer]) #global-footer {
     padding: var(--space) 12px;
   }
 
+  /* Better button groups in project cards on mobile */
+  .card > div[style*="display: flex"][style*="gap"] {
+    gap: 8px !important;
+  }
+  
+  .card > div[style*="display: flex"][style*="gap"] .btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    flex: 1 1 auto;
+    min-width: fit-content;
+  }
+
+  /* Make primary button stand out more on mobile */
+  .card .btn.primary {
+    flex: 1 1 100%;
+  }
+
   /* typography improvements for mobile */
   body {
     font-size: 14px;
@@ -329,6 +354,24 @@ body:has([data-custom-footer]) #global-footer {
   
   h3 {
     font-size: 1.2rem;
+  }
+
+  /* Better spacing for project pages */
+  main[data-custom-footer] h1 {
+    font-size: 1.65rem !important;
+    margin-bottom: 24px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Improve project card titles */
+  .card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
   /* Project page - make card grids single column */
