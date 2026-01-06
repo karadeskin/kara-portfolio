@@ -325,23 +325,20 @@ body:has([data-custom-footer]) #global-footer {
   /* Better button groups in project cards on mobile */
   .card > div[style*="display: flex"][style*="gap"] {
     gap: 8px !important;
+    flex-wrap: wrap !important;
   }
   
   .card > div[style*="display: flex"][style*="gap"] .btn {
     font-size: 0.85rem;
-    padding: 8px 12px;
-    flex: 1 1 auto;
-    min-width: fit-content;
+    padding: 8px 14px;
+    flex: 0 1 auto;
+    white-space: nowrap;
   }
 
-  /* Make primary button stand out more only when there are multiple buttons */
-  .card > div[style*="display: flex"][style*="gap"]:has(.btn + .btn + .btn) .btn.primary {
-    flex: 1 1 100%;
-  }
-  
-  /* When Details is the only button, keep it compact */
-  .card > div[style*="display: flex"][style*="gap"]:has(.btn:only-child) .btn {
-    flex: 0 1 auto;
+  /* Make primary Details button more prominent */
+  .card > div[style*="display: flex"][style*="gap"] .btn.primary {
+    flex: 1 1 auto;
+    min-width: 100px;
   }
 
   /* typography improvements for mobile */
@@ -413,6 +410,14 @@ body:has([data-custom-footer]) #global-footer {
     width: 100%;
     text-align: center;
     justify-content: center;
+  }
+}
+
+/* Medium phones - better button sizing */
+@media (max-width: 600px) {
+  .card > div[style*="display: flex"][style*="gap"] .btn {
+    font-size: 0.82rem;
+    padding: 9px 12px;
   }
 }
 
