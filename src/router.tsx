@@ -45,7 +45,7 @@ import {
             <NavLink to="/about" className="navlink">About</NavLink>
             <NavLink to="/contact" className="navlink">Contact</NavLink>
             <a className="btn" href="https://github.com/karadeskin" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a className="btn" href="https://linkedin.com/in/karadeskin" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a className="btn" href="https://www.linkedin.com/in/karadeskin" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a 
               className="btn"
               href="/Kara_Deskin_Resume.pdf"
