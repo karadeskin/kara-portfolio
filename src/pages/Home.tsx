@@ -1,5 +1,6 @@
 //home page
 
+import { Link } from '@tanstack/react-router'
 import Button from '../components/Button'
 
 export default function Home() {
@@ -93,8 +94,8 @@ export default function Home() {
           <h2 style={{ margin: 0, fontSize: '1.75rem', fontWeight: 600, color: '#fff' }}>
             Here are a few things<br />I'm proud of ↓
           </h2>
-          <button
-            onClick={() => window.location.href = '/projects'}
+          <Link
+            to="/projects"
             style={{
               background: 'transparent',
               border: '2px solid #fff',
@@ -105,19 +106,21 @@ export default function Home() {
               fontWeight: 600,
               cursor: 'pointer',
               transition: 'all 0.2s ease',
-              fontFamily: 'inherit'
+              fontFamily: 'inherit',
+              textDecoration: 'none',
+              display: 'inline-block'
             }}
-            onMouseEnter={(e) => {
+            onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
               e.currentTarget.style.background = 'rgba(255,255,255,0.15)'
               e.currentTarget.style.transform = 'translateY(-2px)'
             }}
-            onMouseLeave={(e) => {
+            onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
               e.currentTarget.style.background = 'transparent'
               e.currentTarget.style.transform = 'translateY(0)'
             }}
           >
             View Projects
-          </button>
+          </Link>
         </div>
       </div>
 
