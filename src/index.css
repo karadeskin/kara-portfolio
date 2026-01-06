@@ -204,6 +204,20 @@ body:has([data-custom-footer]) #global-footer {
     grid-row: auto !important;
     min-height: 400px;
   }
+
+  /* Home page specific improvements */
+  main[data-home-page] > div:first-child {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+
+  main[data-home-page] h1 {
+    font-size: 3rem !important;
+  }
+
+  main[data-home-page] .badge {
+    font-size: 0.9rem !important;
+  }
 }
 
 /* About page responsive */
@@ -243,6 +257,26 @@ body:has([data-custom-footer]) #global-footer {
   
   main > div:nth-child(3) > div:nth-child(3) {
     grid-column: auto !important;
+  }
+
+  /* Project page header navigation */
+  main > div:first-child[style*="justify-content"] {
+    flex-wrap: wrap;
+    gap: 12px !important;
+  }
+  
+  /* Make arrow buttons larger and more touch-friendly on mobile */
+  main > div:first-child[style*="justify-content"] > div {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  main > div:first-child[style*="justify-content"] > a:first-child {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -296,6 +330,42 @@ body:has([data-custom-footer]) #global-footer {
   h3 {
     font-size: 1.2rem;
   }
+
+  /* Project page - make card grids single column */
+  main[data-custom-footer] > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Reset grid-column span for full-width cards on mobile */
+  main[data-custom-footer] .card[style*="gridColumn"] {
+    grid-column: auto !important;
+  }
+
+  /* Project page footer - stack buttons */
+  main[data-custom-footer] > div:last-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+  
+  main[data-custom-footer] > div:last-child > p {
+    order: 2;
+    text-align: center;
+    width: 100%;
+  }
+  
+  main[data-custom-footer] > div:last-child > div {
+    order: 1;
+    width: 100%;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  main[data-custom-footer] > div:last-child a.btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 /* mobile container and spacing */
@@ -321,7 +391,32 @@ body:has([data-custom-footer]) #global-footer {
   }
 
   /* slightly larger touch targets for buttons on very small screens */
-  .btn { padding: 10px 14px }
+  .btn { 
+    padding: 12px 16px;
+    min-height: 44px; /* iOS recommended touch target */
+  }
+
+  /* Larger arrow buttons on mobile for better touch targets */
+  main > div:first-child[style*="justify-content"] .btn {
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    min-width: 50px;
+  }
+
+  /* Better typography for project pages on mobile */
+  main[data-custom-footer] h1 {
+    font-size: 1.75rem !important;
+  }
+
+  main[data-custom-footer] h3 {
+    font-size: 1.1rem !important;
+  }
+
+  /* Improve badge sizing on project pages */
+  main[data-custom-footer] .badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
 }
 
 /* button group for home page */
@@ -347,5 +442,24 @@ body:has([data-custom-footer]) #global-footer {
   .badge {
     font-size: 0.7rem;
     padding: 1px 6px;
+  }
+
+  /* Home page mobile improvements for very small screens */
+  main[data-home-page] h1 {
+    font-size: 2.5rem !important;
+  }
+
+  main[data-home-page] h2 {
+    font-size: 1.3rem !important;
+  }
+
+  main[data-home-page] .badge {
+    font-size: 0.85rem !important;
+    padding: 8px 16px !important;
+  }
+
+  /* Make CTA card arrow more visible */
+  main[data-home-page] div[style*="gradient"] h2 {
+    font-size: 1.25rem !important;
   }
 }
