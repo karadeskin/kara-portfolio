@@ -59,7 +59,7 @@ export default function About() {
           }}
         >
           <img 
-            src="/me.JPG" 
+            src="/vibe.PNG" 
             alt="Kara Deskin" 
             style={{
               width: '100%',
