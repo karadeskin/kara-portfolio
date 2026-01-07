@@ -17,7 +17,7 @@ export default function Projects() {
                 {p.title}
               </a>
             </h3>
-            <p className="muted">{p.summary}</p>
+            <p className="muted" style={{ whiteSpace: 'pre-line' }}>{p.summary}</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 8 }}>
               {p.tech.map((t) => (
                 <span
