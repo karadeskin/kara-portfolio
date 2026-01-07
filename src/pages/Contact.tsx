@@ -36,10 +36,13 @@ export default function Contact() {
             background: 'linear-gradient(135deg, #FFA860 0%, #FF8A80 50%, #FFB3D9 100%)',
             border: 'none',
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             color: '#fff',
-            minHeight: '200px'
+            minHeight: '200px',
+            gap: '16px',
+            padding: '32px 24px'
           }}
         >
           <h1 style={{ 
@@ -52,6 +55,16 @@ export default function Contact() {
           }}>
             Contact<br />Me!
           </h1>
+          <p style={{
+            margin: 0,
+            fontSize: '1.05rem',
+            color: '#fff',
+            textAlign: 'center',
+            fontWeight: 500,
+            opacity: 0.95
+          }}>
+            Open to freelance, collab,<br />and opportunities
+          </p>
         </div>
 
         {/* Contact Form Card */}
