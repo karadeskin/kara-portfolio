@@ -353,6 +353,10 @@ body:has([data-custom-footer]) #global-footer {
     padding: 8px 14px;
     flex: 0 1 auto;
     white-space: nowrap;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Make primary button full-width on its own line */
