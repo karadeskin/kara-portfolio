@@ -201,8 +201,8 @@ export default function Contact() {
                 Located in
               </h3>
               <p style={{ margin: 0, lineHeight: 1.6 }}>
-                Kansas City,<br />
-                Missouri
+                Leawood,<br />
+                Kansas
               </p>
             </div>
             <div>
