@@ -73,6 +73,9 @@ export default function Home() {
             AI•Full-Stack•Web
           </span>
           <p style={{ marginTop: '20px', lineHeight: 1.6, fontSize: '1.05rem' }}>
+            Turning ideas into products. Fast learner, curious builder, AI-fluent.
+          </p>
+          <p style={{ marginTop: '8px', lineHeight: 1.6, fontSize: '0.95rem', color: 'var(--muted)' }}>
             Full-Stack Developer & Midwest made.
           </p>
         </div>
