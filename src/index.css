@@ -246,6 +246,15 @@ body:has([data-custom-footer]) #global-footer {
   main > div:first-child > div:first-child {
     min-height: 400px;
   }
+
+  /* Make contact info card more compact on mobile/tablet */
+  main > div:first-child > div:last-child {
+    min-height: auto !important;
+  }
+  
+  main > div:first-child > div:last-child > div {
+    gap: 20px !important;
+  }
 }
 
 /* Project page responsive */
@@ -418,6 +427,12 @@ body:has([data-custom-footer]) #global-footer {
   .card > div[style*="display: flex"][style*="gap"] .btn {
     font-size: 0.82rem;
     padding: 9px 12px;
+  }
+
+  /* Make contact info grid single column on small phones */
+  main > div:first-child > div:last-child > div[style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
   }
 }
 
