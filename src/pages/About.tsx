@@ -118,37 +118,70 @@ export default function About() {
           color: '#fff'
         }}
       >
-        <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '16px', color: '#fff' }}>
+        <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '20px', color: '#fff' }}>
           Fun Facts
         </h3>
-        <div style={{ 
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: '16px',
-          fontSize: '1rem',
-          lineHeight: 1.6
+        <ul style={{ 
+          margin: 0,
+          padding: 0,
+          listStyle: 'none',
+          fontSize: '1.05rem',
+          lineHeight: 2,
+          marginBottom: '24px'
         }}>
-          <p style={{ margin: 0 }}>🐶 I have a mini goldendoodle named Tucker</p>
-          <p style={{ margin: 0 }}>🎵 I love EDM & rap music</p>
-          <p style={{ margin: 0 }}>🧡 My favorite color is orange</p>
-        </div>
+          <li style={{ 
+            paddingLeft: '28px',
+            position: 'relative'
+          }}>
+            <span style={{ 
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              fontSize: '1.2rem'
+            }}>✦</span>
+            I have a mini goldendoodle named Tucker
+          </li>
+          <li style={{ 
+            paddingLeft: '28px',
+            position: 'relative'
+          }}>
+            <span style={{ 
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              fontSize: '1.2rem'
+            }}>✦</span>
+            I love EDM & rap music
+          </li>
+          <li style={{ 
+            paddingLeft: '28px',
+            position: 'relative'
+          }}>
+            <span style={{ 
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              fontSize: '1.2rem'
+            }}>✦</span>
+            My favorite color is orange
+          </li>
+        </ul>
         <a
-          href="https://open.spotify.com/user/31d23onpx2p3uzgzrk2xzkvvdwxy"
+          href="https://open.spotify.com/user/kmdeskin"
           target="_blank"
           rel="noreferrer"
           className="btn"
           style={{
-            marginTop: '20px',
-            background: '#1DB954',
+            background: '#fff',
             borderColor: 'transparent',
-            color: '#fff',
+            color: '#FF8A80',
             fontWeight: 600,
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px'
           }}
         >
-          🎧 Check out my Spotify
+          Check out my Spotify →
         </a>
       </div>
 
