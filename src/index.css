@@ -154,6 +154,12 @@ a.navlink.active{
 /* text */
 .muted{ color: var(--muted); }
 
+/* Make "Behind the Scenes" button always full-width on its own line */
+.card > div[style*="display: flex"] .btn.primary {
+  flex: 1 1 100%;
+  width: 100%;
+}
+
 /* footer */
 .site-footer{ margin-top: 28px; color:var(--muted); font-size:.92rem; }
 
@@ -344,10 +350,10 @@ body:has([data-custom-footer]) #global-footer {
     white-space: nowrap;
   }
 
-  /* Make primary Details button more prominent */
+  /* Make primary button full-width on its own line */
   .card > div[style*="display: flex"][style*="gap"] .btn.primary {
-    flex: 1 1 auto;
-    min-width: 100px;
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 
   /* typography improvements for mobile */
