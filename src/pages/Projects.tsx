@@ -57,7 +57,7 @@ export default function Projects() {
                 </Link>
               )}
               <Link className="btn primary" to={`/projects/${p.slug}`}>
-                Details
+                Behind the Scenes
               </Link>
             </div>
           </article>
