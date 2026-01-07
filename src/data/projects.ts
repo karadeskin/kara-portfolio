@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     slug: 'acellus-gold-store',
     title: 'Acellus Gold Store Website',
     summary:
-      'Full-stack contributions to e-commerce site; React (Vite+TS) front end and Go APIs. Used daily by thousands of users.',
+      'Full-stack contributions to e-commerce site; React (Vite+TS) front end and Go APIs.\n\nUsed daily by thousands of users.',
     tech: [
       { name: 'React', color: '#FF69B4' },
       { name: 'TypeScript', color: '#FF7F50' },
