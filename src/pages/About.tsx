@@ -47,7 +47,7 @@ export default function About() {
           <p style={{ lineHeight: 1.7, fontSize: '1rem', color: 'var(--text)' }}>
             I'm especially passionate about projects that combine technology with education, health, or 
             tools that make people's lives easier. Outside of coding, I love working out, hiking, 
-            and spending time outdoors — and I'm passionate about helping children and 
+            and spending time outdoors, and I'm passionate about helping children and 
             giving back to my community.
           </p>
         </div>
@@ -106,6 +106,50 @@ export default function About() {
             </span>
           ))}
         </div>
+      </div>
+
+      {/* Fun Facts Card - full width */}
+      <div 
+        className="card" 
+        style={{ 
+          marginBottom: '24px',
+          background: 'linear-gradient(135deg, #FFA860 0%, #FF8A80 50%, #FFB3D9 100%)',
+          border: 'none',
+          color: '#fff'
+        }}
+      >
+        <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '16px', color: '#fff' }}>
+          Fun Facts
+        </h3>
+        <div style={{ 
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: '16px',
+          fontSize: '1rem',
+          lineHeight: 1.6
+        }}>
+          <p style={{ margin: 0 }}>🐶 I have a mini goldendoodle named Tucker</p>
+          <p style={{ margin: 0 }}>🎵 I love EDM & rap music</p>
+          <p style={{ margin: 0 }}>🧡 My favorite color is orange</p>
+        </div>
+        <a
+          href="https://open.spotify.com/user/31d23onpx2p3uzgzrk2xzkvvdwxy"
+          target="_blank"
+          rel="noreferrer"
+          className="btn"
+          style={{
+            marginTop: '20px',
+            background: '#1DB954',
+            borderColor: 'transparent',
+            color: '#fff',
+            fontWeight: 600,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px'
+          }}
+        >
+          🎧 Check out my Spotify
+        </a>
       </div>
 
       {/* Contact Footer */}
