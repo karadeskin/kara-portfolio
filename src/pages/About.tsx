@@ -47,7 +47,7 @@ export default function About() {
           <p style={{ lineHeight: 1.7, fontSize: '1rem', color: 'var(--text)' }}>
             I'm especially passionate about projects that combine technology with education, health, or 
             tools that make people's lives easier. Outside of coding, I love working out, hiking, 
-            and spending time outdoors, and I'm passionate about helping children and 
+            and spending time outdoors, and I'm dedicated to helping children and 
             giving back to my community.
           </p>
         </div>
