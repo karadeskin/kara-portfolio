@@ -40,7 +40,7 @@ export default function About() {
             About Me
           </h2>
           <p style={{ lineHeight: 1.7, fontSize: '1rem', color: 'var(--text)', marginBottom: '16px' }}>
-            Hi, I'm Kara! I graduated in May 2025 with a Computer Science degree from KU 
+            Hi, I'm Kara! I graduated in May 2025 with a Bachelor of Science in Computer Science from the University of Kansas School of Engineering 
             and am currently a Full-Stack Development Apprentice at Acellus. I enjoy building 
             applications, from clean React frontends to efficient Go APIs.
           </p>
