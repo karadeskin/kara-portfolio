@@ -92,6 +92,9 @@ a.navlink.active{
 }
 
 /* cards & badges */
+.grid.cards .card {
+  min-width: 0; /* allow card to shrink so "Behind the Scenes" button stays within bounds */
+}
 .card{
   background:var(--surface);
   border:1px solid var(--border);
@@ -157,12 +160,16 @@ a.navlink.active{
 /* Make "Behind the Scenes" button always full-width on its own line */
 .card > div[style*="display: flex"] {
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .card > div[style*="display: flex"] .btn.primary {
   flex: 1 1 100%;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   margin-top: 4px;
+  box-sizing: border-box;
 }
 
 /* footer */
