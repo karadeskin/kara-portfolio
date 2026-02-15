@@ -57,6 +57,17 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    slug: 'ias-forms',
+    title: 'IAS Admissions Forms Engine',
+    summary:
+      'Built a REST API for managing student admissions data with 5 main modules (personal info, addresses, academic/employment history, interests). Designed ScyllaDB schema for concurrency and scale, with validation, error handling, and comprehensive unit tests.',
+    tech: [
+      { name: 'Go', color: '#00ADD8' },
+      { name: 'ScyllaDB', color: '#FC5C2B' },
+      { name: 'REST API', color: '#6DB33F' },
+    ],
+  },
+  {
     slug: 'travel-journal',
     title: 'Travel Journal',
     summary: 'Personal travel journal app for logging trips, photos, and notes. Includes offline support and map views.',

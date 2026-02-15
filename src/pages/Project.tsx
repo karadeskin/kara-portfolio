@@ -57,6 +57,17 @@ export default function Project() {
       ],
       outcomes: 'This work has made the checkout flow more reliable and reduced friction for customers. It also made day to day operations easier for the team by simplifying how items are added and managed.'
     },
+    'ias-forms': {
+      role: 'Solo project built from scratch. Designed and implemented the entire backend.',
+      approach: 'I architected a modular REST API with five main modules—personal info, addresses, academic history, employment history, and interests. I chose ScyllaDB for its ability to handle high write throughput and concurrent requests, designed the schema for efficient queries, and built each component so it could be developed and tested independently.',
+      highlights: [
+        'Tech: Go, ScyllaDB, REST API',
+        'Designed NoSQL schema in ScyllaDB (Cassandra-compatible) for concurrency and horizontal scaling',
+        'Input validation and error handling for clean data throughout the API',
+        'Comprehensive unit tests for all endpoints and modular architecture for maintainability'
+      ],
+      outcomes: 'Delivered a production-ready API that scales efficiently under concurrent load. The modular design makes it straightforward to extend or modify individual modules without affecting the rest of the system.'
+    },
     'travel-journal': {
       role: 'Personal project built over a few weekends and improved gradually.',
       approach: 'I built offline support and map views so logging trips, photos, and notes feels effortless. I added a lightweight sync flow to upload entries when a connection is available.',
