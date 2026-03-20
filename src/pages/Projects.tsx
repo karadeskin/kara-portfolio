@@ -34,6 +34,11 @@ export default function Projects() {
               ))}
             </div>
             <div style={{ display: 'flex', gap: 10, marginTop: 12 }}>
+              {p.live && (
+                <a className="btn" href={p.live} target="_blank" rel="noreferrer">
+                  Try it
+                </a>
+              )}
               {p.repo && (
                 <a className="btn" href={p.repo} target="_blank" rel="noreferrer">
                   GitHub

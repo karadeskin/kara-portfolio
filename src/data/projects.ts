@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     slug: 'reframe-ai',
     title: 'Reframe — AI Mental Health Chatbot',
     summary:
-      'Streamlit app for journaling + mood tracking with sentiment analysis and SQL logging.',
+      'Streamlit app for journaling + mood tracking with sentiment analysis and SQL logging. Try it live — log in with test/test.',
     tech: [
       { name: 'Python', color: '#FF7F50' },
       { name: 'Streamlit', color: '#FF69B4' },
@@ -28,8 +28,9 @@ export const PROJECTS: Project[] = [
       { name: 'pandas', color: '#FFB347' },
     ],
     repo: 'https://github.com/karadeskin/reframe',
-  demo: '/reframe-demo.mov',
-  caseStudy: true,
+    live: 'https://reframe.streamlit.app/',
+    demo: '/reframe-demo.mov',
+    caseStudy: true,
   },
   {
     slug: 'music-recs',

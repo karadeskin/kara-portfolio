@@ -31,6 +31,7 @@ export default function Project() {
       approach: 'I built a Streamlit interface for fast UI iteration, wired in a small sentiment model to score entries, and logged entries to SQLite so I could run quick pandas analyses and show trends.',
       highlights: [
         'Tech: Python, Streamlit, SQL, pandas',
+        'Live at reframe.streamlit.app — use test/test to log in and try it',
         'Used a small transformer sentiment pipeline for reliable scoring and simple SQLite logging for privacy and portability',
         'Quick analytics via pandas for trend visualization'
       ],

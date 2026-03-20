@@ -10,7 +10,16 @@ export default function ReframeCaseStudy() {
   <Link className="navlink active" to="/projects">← Back to Projects</Link>
         <h1>{p.title}</h1>
         <p className="muted">Reframe AI Mental Health Chatbot</p>
-        {/* Intentionally left empty: project links live on the Projects page */}
+        {p.live && (
+          <p style={{ marginTop: 8 }}>
+            <a href={p.live} target="_blank" rel="noreferrer" className="btn">
+              Try it live ↗
+            </a>
+            <span className="muted" style={{ marginLeft: 12, fontSize: '0.9rem' }}>
+              Log in with test/test
+            </span>
+          </p>
+        )}
       </header>
 
       <section>
