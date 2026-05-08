@@ -70,10 +70,10 @@ export default function Home() {
               fontWeight: 600
             }}
           >
-            AI•Full-Stack•Web
+            AI•Backend•Consulting
           </span>
           <p style={{ marginTop: '20px', lineHeight: 1.6, fontSize: '1.05rem' }}>
-            Turning ideas into products. Fast learner, curious builder, AI-fluent.
+            Bridging technical systems with client solutions to build tools that help others.
           </p>
           <p style={{ marginTop: '8px', lineHeight: 1.6, fontSize: '0.95rem', color: 'var(--muted)' }}>
             Clinical Solution Delivery Consultant + Backend Developer, Midwest made.

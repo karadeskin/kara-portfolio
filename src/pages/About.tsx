@@ -42,11 +42,11 @@ export default function About() {
           <p style={{ lineHeight: 1.7, fontSize: '1rem', color: 'var(--text)', marginBottom: '16px' }}>
             Hi, I'm Kara! I graduated in May 2025 with a Bachelor of Science in Computer Science from the University of Kansas School of Engineering
             and now work as a Clinical Solution Delivery Consultant at Netsmart. I still love the builder side of things too, especially backend development,
-            APIs, and shipping tools that actually make work easier.
+            APIs, and shipping tools that actually make work easier. I'm also really passionate about mental health and creating technology that supports people.
           </p>
           <p style={{ lineHeight: 1.7, fontSize: '1rem', color: 'var(--text)' }}>
             I like being in that sweet spot between technical problem-solving and client-facing work, translating needs into solutions and then helping teams
-            bring them to life. Outside of work, I love traveling, working out, hiking, and finding new places outdoors with my mini goldendoodle, Tucker.
+            bring them to life. Outside of work, I love traveling, working out, music and concerts, and finding new places with my mini goldendoodle, Tucker.
           </p>
         </div>
 
