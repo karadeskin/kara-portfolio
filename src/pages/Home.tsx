@@ -76,7 +76,7 @@ export default function Home() {
             Turning ideas into products. Fast learner, curious builder, AI-fluent.
           </p>
           <p style={{ marginTop: '8px', lineHeight: 1.6, fontSize: '0.95rem', color: 'var(--muted)' }}>
-            Full-Stack Developer & Midwest made.
+            Clinical Solution Delivery Consultant + Backend Developer, Midwest made.
           </p>
         </div>
 

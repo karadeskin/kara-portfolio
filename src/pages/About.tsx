@@ -40,15 +40,13 @@ export default function About() {
             About Me
           </h2>
           <p style={{ lineHeight: 1.7, fontSize: '1rem', color: 'var(--text)', marginBottom: '16px' }}>
-            Hi, I'm Kara! I graduated in May 2025 with a Bachelor of Science in Computer Science from the University of Kansas School of Engineering 
-            and am currently a Full-Stack Development Apprentice at Acellus. I enjoy building 
-            applications, from clean React frontends to efficient Go APIs.
+            Hi, I'm Kara! I graduated in May 2025 with a Bachelor of Science in Computer Science from the University of Kansas School of Engineering
+            and now work as a Clinical Solution Delivery Consultant at Netsmart. I still love the builder side of things too, especially backend development,
+            APIs, and shipping tools that actually make work easier.
           </p>
           <p style={{ lineHeight: 1.7, fontSize: '1rem', color: 'var(--text)' }}>
-            I'm especially passionate about projects that combine technology with education, health, or 
-            tools that make people's lives easier. Outside of coding, I love working out, hiking, 
-            and spending time outdoors, and I'm dedicated to helping children and 
-            giving back to my community.
+            I like being in that sweet spot between technical problem-solving and client-facing work, translating needs into solutions and then helping teams
+            bring them to life. Outside of work, I love traveling, working out, hiking, and finding new places outdoors with my mini goldendoodle, Tucker.
           </p>
         </div>
 
